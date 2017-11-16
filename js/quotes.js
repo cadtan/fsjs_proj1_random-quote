@@ -35,8 +35,8 @@ const quotes = [
 	{
 		quote: "Do not weep; do not wax indignant. Understand.",
 		source: "Baruch Spinoza",
-		citation: "Journal",
+		citation: "Letter 44 (56) to Albert Burgh",
 		year: "1632 - 1677",
 		tag: "Sadness"
 	}
-]
+];

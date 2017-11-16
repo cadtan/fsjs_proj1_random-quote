@@ -7,12 +7,12 @@ let quotesCopy = [];
 // Initialize page with copy of quotes array and display random quote
 ( function init() {	
 	// If array copy is empty, clone original array and print quote
-	if ( quotesCopy.length == 0 ) {	
+	if ( quotesCopy.length === 0 ) {	
 		cloneArray();
 		printQuote();	
 	}
 	// Refresh quote every 20 sec
-	setInterval( printQuote, 20000 );
+	setInterval( printQuote, 3000 );
 })();
 
 // Clone a quotes array
@@ -31,10 +31,10 @@ function getRandomQuote( quotes ) {
 	quotesCopy.splice( randomNum, 1 );
 	console.log( randomQuote );
 	// If array left one item...
-	if( quotesCopy.length == 0 ){
+	if( quotesCopy.length === 0 ){
 		console.log( "last quote" );
 		// Clone quotes array
-		cloneArray()
+		cloneArray();
 	}
 	return randomQuote;   
 }
@@ -65,7 +65,7 @@ function changeBackgroundColor() {
 }	
 
 // Add click event to button
-loadQuote.addEventListener( 'click', ()=> {
+loadQuoteButton.addEventListener( 'click', ()=> {
 	printQuote();
 }, false);
 
